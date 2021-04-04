@@ -67,7 +67,6 @@ nav {
 
 nav ul {
     float: right;
-    margin-right: 20px;
 }
 
 nav ul li {
@@ -243,6 +242,10 @@ nav ul li a {
     width: 70%;
 }
 
+#portfolio {
+    width: 100%;
+}
+
 .text-content h1{
     font-family: Roboto Mono;
     font-style: normal;
@@ -281,7 +284,7 @@ nav ul li a {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 0 0 80px 0;
 }
 
 .links ul{

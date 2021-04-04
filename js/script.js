@@ -4,11 +4,11 @@
 // Animar o scroll até o alvo
 
 const menuItems = document.querySelectorAll('.menu a[href^="#"]');
-const menu =  document.getElementById("#check:checked~ul");
+const check = document.getElementById('input #check');
 
 function getScrollTopByHref(element) {
 	const id = element.getAttribute('href');
-	return document.querySelector(id).offsetTop;
+  return document.querySelector(id).offsetTop;
 }
 
 function scrollToPosition(to) {
@@ -20,11 +20,14 @@ function scrollToPosition(to) {
   smoothScrollTo(0, to);
 }
 
+function desabilita() {
+    document.getElementById('check').checked=false;
+}
+
 function scrollToIdOnClick(event) {
 	event.preventDefault();
 	const to = getScrollTopByHref(event.currentTarget) - 80;
-    scrollToPosition(to);
-    document.menu.style.marginLeft = "0";
+  scrollToPosition(to);
 }
 
 menuItems.forEach(item => {
@@ -35,7 +38,7 @@ menuItems.forEach(item => {
 // /**
 //  * Smooth scroll animation
 //  * @param {int} endX: destination x coordinate
-//  * @param {int) endY: destination y coordinate
+//  * @param {int} endY: destination y coordinate
 //  * @param {int} duration: animation duration in ms
 //  */
 function smoothScrollTo(endX, endY, duration) {
