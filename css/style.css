@@ -433,10 +433,6 @@ footer p {
         align-items: center;
     }
 
-    .text-principal ul li{
-        padding: 0 10px;
-    }
-
     .disable-principal{
             display: none;
     }
@@ -514,11 +510,20 @@ footer p {
     }
 
     footer div ul li p{
-        font-size: 14px;
+        font-size: 10px;
     }
 }
 @media (max-width: 358px) {
+
+    .logo{
+        height: 20px;
+    }
+
     .text-principal ul li a img {
         width: 30px;
+    }
+
+    .links ul li a img{
+        width: 50px
     }
 }
