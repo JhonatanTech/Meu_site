@@ -264,6 +264,7 @@ nav ul li a {
     line-height: 32px;
     word-spacing: 5px;
     padding-right: 20px;
+    text-align: justify;
 }
 
 .img-content{
@@ -463,6 +464,10 @@ footer p {
         width: 100%;
     }
 
+    .text-content p{
+        font-size: 20px;
+    }
+
     .disable{
         display: none;
     }
@@ -499,7 +504,7 @@ footer p {
     }
 
     .text-content h1{
-        font-size: 22px;
+        font-size: 26px;
         margin-bottom: 5px;
     }
 
@@ -529,6 +534,10 @@ footer p {
         width: 30px;
     }
 
+    .text-content p{
+        font-size: 16px;
+    }
+
     .links ul li a img{
         width: 50px
     }
@@ -540,7 +549,7 @@ footer p {
     }
 }
 
-@media (max-width: 270px) {
+@media (max-width: 300px) {
     .logo{
         height: 25px;
     }
