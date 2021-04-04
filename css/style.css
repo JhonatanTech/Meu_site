@@ -74,12 +74,23 @@ nav ul li {
     display: inline-block;
     line-height: 20px;
     margin: 25px 0 0 5px;
+    padding: 5px;
+}
+
+nav ul li:hover{
+    padding: 5px;
+    background-color: #c0c0c042;
+    border-radius: 5px;
 }
 
 nav ul li:last-child {
     background: linear-gradient(90deg, #F794A4 0%, #FDD6BD 100%);
     border-radius: 5px;
     padding: 5px;
+}
+
+nav ul li:last-child:hover{
+    background: linear-gradient(90deg, #db7f8f 0%, #e0bda7 100%);
 }
 
 nav ul li a {
@@ -90,6 +101,8 @@ nav ul li a {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+
 
 .checkbtn {
     font-size: 30px;
@@ -226,10 +239,9 @@ nav ul li a {
     flex-direction: row-reverse;
 }
 
-.content div{
-    width: 50%;
+.text-content{
+    width: 70%;
 }
-
 
 .text-content h1{
     font-family: Roboto Mono;
@@ -248,12 +260,18 @@ nav ul li a {
     font-size: 24px;
     line-height: 32px;
     word-spacing: 5px;
+    padding-right: 20px;
 }
 
 .img-content{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30%;
+}
+
+.img-content img{
+    width: 100%;
 }
 
 .links{
@@ -416,10 +434,6 @@ footer p {
         padding: 0 10px;
     }
 
-    .text-principal ul li a img{
-        width: 50px;
-    }
-
     .disable-principal{
             display: none;
     }
@@ -433,7 +447,6 @@ footer p {
     .content-bg:nth-child(even) {
         background: url("../img/bg-mobile-2.png") no-repeat center center;
         background-size: 100% 100%;
-        padding: 30vh 0 15vh 0;
         margin: 0;
     }
 
@@ -472,9 +485,6 @@ footer p {
 }
 
 @media (max-width: 458px) {
-    .text-principal ul li a img {
-        width: 30px;
-    }
 
     div .text-principal {
         display: flex;
@@ -502,5 +512,10 @@ footer p {
 
     footer div ul li p{
         font-size: 14px;
+    }
+}
+@media (max-width: 358px) {
+    .text-principal ul li a img {
+        width: 30px;
     }
 }
