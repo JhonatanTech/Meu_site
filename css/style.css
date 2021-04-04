@@ -495,7 +495,6 @@ footer p {
     }
 
     .text-principal p {
-        font-size: 26px;
         font-weight: 500;
     }
 
@@ -513,10 +512,17 @@ footer p {
         font-size: 10px;
     }
 }
-@media (max-width: 358px) {
 
-    .logo{
-        height: 20px;
+@media (max-width: 432px) {
+    .text-principal p {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .text-principal p {
+        font-size: 22px;
     }
 
     .text-principal ul li a img {
@@ -525,5 +531,30 @@ footer p {
 
     .links ul li a img{
         width: 50px
+    }
+}
+
+@media (max-width: 370px) {
+    .text-principal p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 270px) {
+    .logo{
+        height: 25px;
+    }
+
+    .text-principal p {
+        font-size: 20px;
+    }
+
+    .text-principal ul li a img {
+        width: 20px;
+    }
+
+    .text-content p{
+        font-size: 14px;
+        word-spacing: 2px;
     }
 }
