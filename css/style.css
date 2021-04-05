@@ -131,10 +131,12 @@ nav ul li a {
         display: block;
     }
 
-    .fas{
+    .menu-hamburg{
         background: linear-gradient(90deg, #F794A4 0%, #FDD6BD 100%);
+        margin-top: 16px;
         border-radius: 5px;
-        padding: 10px 15px;
+        padding: 10px 10px;
+        color: #101844;
     }
 
     nav ul {
@@ -499,10 +501,6 @@ footer p {
         width: 100%;
     }
 
-    .text-principal p {
-        font-weight: 500;
-    }
-
     .text-content h1{
         font-size: 26px;
         margin-bottom: 5px;
@@ -510,7 +508,7 @@ footer p {
 
     .text-content p{
         font-size: 20px;
-        line-height: 24px;
+        line-height: 28px;
     }
 
     footer div ul li p{
@@ -536,6 +534,7 @@ footer p {
 
     .text-content p{
         font-size: 16px;
+        line-height: 22px;
     }
 
     .links ul li a img{
@@ -564,6 +563,7 @@ footer p {
 
     .text-content p{
         font-size: 14px;
+        line-height: 20px;
         word-spacing: 2px;
     }
 }
